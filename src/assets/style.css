@@ -1,0 +1,151 @@
+/* Ljus tema */
+body.light {
+  background-color: #f9f6ee; /* Bone-white */
+  color: #333;
+}
+
+nav.light {
+  background-color: black; /* Svart bakgrund för navbar */
+}
+
+nav.light ul li a {
+  background-color: black; /* Svart bakgrund för länkar */
+  color: white; /* Vit text för länkar */
+}
+
+nav.light ul li a:hover {
+  background-color: grey; /* Grå bakgrund på hover */
+}
+
+/* Mörkt tema */
+body.dark {
+  background-color: #333; /* Mörk bakgrund */
+  color: black; /* Svart text */
+}
+
+nav.dark {
+  background-color: #222; /* Mörkare bakgrund för navbar */
+}
+
+nav.dark ul li a {
+  background-color: #444; /* Mörkare bakgrund för länkar */
+  color: black; /* svart text för länkar */
+}
+
+nav.dark ul li a:hover {
+  background-color: #555; /* Lite ljusare grå vid hover */
+}
+
+h1, h2, h3 {
+  color: black; /* Svart text för rubriker när mörkt tema är aktivt */
+}
+
+/* Generella stilar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li ul {
+  padding-left: 20px;
+}
+
+li ul li {
+  list-style: disc;
+  margin: 5px 0;
+}
+
+/* Navigation */
+nav {
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  opacity: 99%;
+}
+
+/* Media querry */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
