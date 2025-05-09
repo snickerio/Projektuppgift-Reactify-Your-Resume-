@@ -7,7 +7,7 @@ Detta är ett skolprojekt där syftet var att skapa en interaktiv CV-sida med hj
 - **Interaktivt användargränssnitt:** Användaren kan navigera mellan sektioner som CV, projekt och kontaktinformation utan att ladda om sidan.
 - **Responsiv design:** Sidan anpassar sig för att fungera bra på både desktop och mobila enheter.
 - **Komponentbaserad struktur:** Projektet är byggt med återanvändbara React-komponenter för varje sektion av CV:t, som kan hantera visning och interaktioner.
-- **State management:**
+- **State management**
 
 ## Tekniker
 
